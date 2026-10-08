@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Mi Portafolio</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,400&family=Nunito:wght@400;600;700&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="prog"></div>
+  <canvas id="petals"></canvas>
+  <nav>
+    <a class="logo" href="#inicio">Nayerlis Beleño</a>
+    <ul>
+      <li><a href="#sobre">Sobre mí</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#camino">Trayectoria</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <button id="theme" aria-label="Cambiar tema">🌙 Oscuro</button>
+  </nav>
+
+  <section class="hero" id="inicio">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div>
+      <p style="color:var(--muted);margin:0 0 8px">Hola, soy</p>
+      <h1>Nayerlis <span>Beleño</span></h1>
+      <div class="typed" id="typed"></div>
+      <p style="max-width:460px;color:var(--muted)">Creo cosas con cariño y detalle. Este es mi espacio para mostrar lo
+        que he aprendido y lo que me apasiona.</p>
+      <div class="btns"><a class="btn p" href="#proyectos">Ver proyectos</a><a class="btn s"
+          href="#contacto">Escríbeme</a></div>
+    </div>
+    <div class="avatar">N</div>
+  </section>
+
+  <section id="sobre">
+    <h2 class="rv">Sobre mí</h2>
+    <p class="sub rv">Un poquito de mi historia</p>
+    <div class="about rv">
+      <div>
+        <p>Soy estudiante apasionada por la tecnología y el diseño. Me gusta resolver problemas con creatividad,
+          trabajar en equipo y aprender algo nuevo cada día.</p>
+        <p>Cuando no estoy programando, me encontrarás leyendo, dibujando, heciendo deporte o escuchando música.</p>
+        <div class="chips"><span class="chip">🌸 Creativa</span><span class="chip">📚 Curiosa</span><span
+            class="chip">🤝 Trabajo en equipo</span><span class="chip">✨ Detallista</span></div>
+      </div>
+      <div class="stats">
+        <div class="stat"><b data-n="6">0</b>Proyectos</div>
+        <div class="stat"><b data-n="3">0</b>Cursos</div>
+        <div class="stat"><b data-n="1">0</b>Idiomas</div>
+        <div class="stat"><b data-n="100">0</b>% ganas</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="habilidades">
+    <h2 class="rv">Habilidades</h2>
+    <p class="sub rv">Lo que mejor se me da</p>
+    <div class="card rv">
+      <div class="skill">
+        <div><span>HTML y CSS</span><span>90%</span></div><span class="bar"><i data-w="90"></i></span>
+      </div>
+      <div class="skill">
+        <div><span>JavaScript</span><span>70%</span></div><span class="bar"><i data-w="70"></i></span>
+      </div>
+      <div class="skill">
+        <div><span>Diseño y creatividad</span><span>85%</span></div><span class="bar"><i data-w="85"></i></span>
+      </div>
+      <div class="skill">
+        <div><span>Comunicación</span><span>95%</span></div><span class="bar"><i data-w="95"></i></span>
+      </div>
+    </div>
+  </section>
+
+  <section id="proyectos">
+    <h2 class="rv">Proyectos</h2>
+    <p class="sub rv">Toca uno para ver más</p>
+    <div class="filters" id="filters"><button class="on" data-f="all">Todos</button><button
+        data-f="web">Web</button><button data-f="dis">Diseño</button><button data-f="est">Estudio</button></div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section id="camino">
+    <h2 class="rv">Trayectoria</h2>
+    <p class="sub rv">Mi camino hasta ahora</p>
+    <div class="timeline">
+      <div class="tl rv"><small>2026</small>
+        <h3>Proyecto actual</h3>
+        <p>Actualmente continúo mi formación en Ingeniería de Sistemas, fortaleciendo mis conocimientos en programación,
+          desarrollo web, bases de datos y tecnologías de la información.</p>
+      </div>
+      <div class="tl rv"><small>2025</small>
+        <h3>Curso o logro</h3>
+        <p>Durante este año comencé a fortalecer mis conocimientos en programación y desarrollo de proyectos
+          tecnológicos, aprendiendo a utilizar diferentes herramientas y lenguajes de programación.</p>
+      </div>
+      <div class="tl rv"><small>2024</small>
+        <h3>Inicio de estudios</h3>
+        <p>Inicié una nueva etapa de formación académica enfocada en el área de sistemas y tecnología, con el objetivo
+          de prepararme para mi futuro profesional.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2 class="rv">Hablemos</h2>
+    <p class="sub rv">Me encantará leerte</p>
+    <form id="form" class="rv">
+      <input id="n" placeholder="Tu nombre" required>
+      <input id="e" type="email" placeholder="Tu correo" required>
+      <textarea id="m" rows="4" placeholder="Tu mensaje" required></textarea>
+      <button class="btn p" type="submit">Enviar mensaje</button>
+    </form>
+    <div class="social rv"><a href="mailto:nayebeleno509@gmail.com">💌 Correo</a>
+      <a href="https://www.instagram.com/naye_beleno?stkn=Nmc4ZjVreWFyNHlx">📷 Instagram</a>
+        <a href="https://github.com/settings/profile">🐙 GitHub</a></div>
+  </section>
+
+  <footer>Hecho con 💗 · <span id="yr"></span> · <a href="#inicio" style="text-decoration:underline">Volver arriba</a>
+  </footer>
+
+  <div class="modal" id="modal">
+    <div class="card">
+      <h3 id="mt"></h3>
+      <p id="md" style="color:var(--muted)"></p><button class="btn p" onclick="closeM()">Cerrar</button>
+    </div>
+  </div>
+  <div id="toast"></div>
+
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>
